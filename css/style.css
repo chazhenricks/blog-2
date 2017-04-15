@@ -70,11 +70,11 @@ FOOTER
 SPLASH PAGE
 ***************************************/
 
-#enter{
-  text-align: center;
-}
+
 
 .enter-button{
+  display: block;
+  left: 45%;
   position: fixed;
   top:35%;
   border: .1em solid black;
