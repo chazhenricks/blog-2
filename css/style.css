@@ -94,7 +94,7 @@ BLOG PAGE
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 1px 5px;
 }
 
@@ -103,13 +103,28 @@ BLOG PAGE
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 50%;
 }
 .blog-date{
   font-size: 1em;
   color: #484848;
 }
 
+.blog-copy{
+  max-width: 80%;
+}
+
+/**************************************
+PORTFOLIO
+***************************************/
+
+.placeholder-message{
+  margin-top: 3em;
+  max-width: 60%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2em;
+}
 
 
 
@@ -119,6 +134,54 @@ BLOG PAGE
 
 
 
+/**************************************
+ABOUT PAGE
+***************************************/
+#profile-picture{
+  max-width: 35%;
+  border-radius: 20px;
+}
+
+.about-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.about-copy{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-text{
+  max-width: 50%;
+}
+
+
+
+
+
+
+
+
+/**************************************
+CLEARFIX
+***************************************/
+
+.clearfix:after{
+  display: table;
+  content:"";
+  clear:both;
+}
 
 
 
