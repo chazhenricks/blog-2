@@ -14,21 +14,33 @@ HEADER
   justify-content: space-between;
   align-items: center;
 }
+
+.header-nav ul{
+  display: flex;
+  justify-content: space-between;
+}
 .page-header h1{
   padding-left: .75em;
+  color: red;
 }
 
 .header-nav a {
   text-decoration: none;
-  padding-right: 2em;
-  padding-left: 1em;
-  margin-left: 1em;
   color: black;
 }
 
-.header-nav a:not(:last-child){
-  border-right: 1px solid black;
+.header-nav li{
+  margin-left: 2em;
+  margin-right: 2em;
+  list-style-type: none;
 }
+
+.header-nav a:hover{
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+
 
 
 
