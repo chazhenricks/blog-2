@@ -2,16 +2,10 @@
 ### Create a page for your personal branding that will showcase your work and be used as part of your graduation self-marketing.
 ## Setup
 
-These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
-Run the following command in your terminal:
-
-```bash
-mkdir -p ~/workspace/challenges/static-web/html && cd $_
-```
 
 This will create a project folder and cd you into it.
-When you are ready to start the challenge, request the Github Classroom link from your instructor  
-+ Once your repository is created on GitHub, copy the list of commands under **"..or create a new repository on the command line"** by clicking on the clipboard icon  
+When you are ready to start the challenge, request the Github Classroom link from your instructor
++ Once your repository is created on GitHub, copy the list of commands under **"..or create a new repository on the command line"** by clicking on the clipboard icon
 + Paste the commands into your terminal. This will create a README.md file, add it, commit it, connect your local repo to GitHub, and set you up to push changes. (If the last command, `git push origin master` isn't automatically executed, hit enter/return to run it).
 
 All of your work should be on a branch, NOT on master. To do this, type:
@@ -54,5 +48,5 @@ Create a page for your own personal branding that can be treated as the beginnin
 
 * Page Titles and Headings: http://meetcontent.com/blog/introducing-content-page-titles-headings/
 * Explore and create color combinations: https://color.adobe.com
-* Material Color: https://material.io/guidelines/style/color.html#color-color-system 
+* Material Color: https://material.io/guidelines/style/color.html#color-color-system
     - Material color tool - https://material.io/color/#!/?view.left=0&view.right=0
