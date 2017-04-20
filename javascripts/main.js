@@ -18,12 +18,13 @@ var blogPosts = [
 ];
 
 var container = document.getElementById("container");
+var links = document.getElementById("list-group");
 
 for (potato in blogPosts){
   var posts =
     `<article class ="container-fluid">
-      <header class="">
-        <h3 class=""> -- ${blogPosts[potato].date} --</h3>
+      <header class="page-header">
+        <h3 class="">${blogPosts[potato].date}</h3>
         <h2 class="">${blogPosts[potato].title} </h2>
       </header>
       <section class="">
@@ -34,7 +35,15 @@ for (potato in blogPosts){
       </footer>
     </article>`;
 
+  var linkContent =
+  `<a href="#" class="list-group-item">
+    <h4 class ="list-group-item-heading">${blogPosts[potato].title}</h4>
+    <p class ="list-group-item-text">${blogPosts[potato].author}</p>
+   </a>
+  `
+
 container.innerHTML += posts;
+links.innerHTML += linkContent;
 
 };
 
