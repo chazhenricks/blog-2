@@ -21,16 +21,16 @@ var container = document.getElementById("container");
 
 for (potato in blogPosts){
   var posts =
-    `<article class ="blog-entry">
-      <header class="blog-header">
-        <h3 class="blog-date"> -- ${blogPosts[potato].date} --</h3>
-        <h2 class="blog-title">${blogPosts[potato].title} </h2>
+    `<article class ="container-fluid">
+      <header class="">
+        <h3 class=""> -- ${blogPosts[potato].date} --</h3>
+        <h2 class="">${blogPosts[potato].title} </h2>
       </header>
-      <section class="blog-copy">
+      <section class="">
         ${blogPosts[potato].copy}
       </section>
-      <footer class="blog-footer">
-        <p class="blog-author">Written By - ${blogPosts[potato].author}
+      <footer class="">
+        <p class="">Written By - ${blogPosts[potato].author}
       </footer>
     </article>`;
 

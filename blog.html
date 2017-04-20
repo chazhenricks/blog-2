@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Chaz Henricks - Blog </title>
     <link rel ="stylesheet" href = "css/style.css" type ="text/css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   </head>
-  <body class = "blog-wrapper">
+  <body>
 
-  <header class ="page-header">
-    <h1> Chaz Henricks </h1>
-    <nav class ="header-nav">
-      <ul>
-        <li><a href ="about.html">About</a></li>
-        <li><a href ="portfolio.html">Portfolio</a></li>
-        <li><a href ="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class ="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            Chaz Henricks
+          </div>
 
-  <div id="container"></div>
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+          </button>
+        </div>
+        <div class ="collapse navbar-collapse navHeaderCollapse">
+         <ul class ="nav navbar-nav navbar-right">
+           <li class =""><a href ="about.html">About</a></li>
+           <li><a href ="portfolio.html">Portfolio</a></li>
+           <li class="active"><a href ="blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-  <footer class ="page-footer">
-    <p class="copyright"> &copy; Chaz Henricks - 2017</p>
-    <nav class="footer-nav">
-      <a href="https://github.com/chazhenricks"><img src="images/github.svg" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/chaz-henricks-42b839137/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-      <a href="mailto:chazhenricks@gmail.com"><img src="images/mail.svg.png" alt="mail"></a>
-    </nav>
+    <div id="container" class="container-fluid"></div>
+
+    <footer class ="container-fluid">
+      <p class=""> &copy; Chaz Henricks - 2017</p>
+      <nav class="">
+        <a href="https://github.com/chazhenricks"><img src="images/github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/chaz-henricks-42b839137/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        <a href="mailto:chazhenricks@gmail.com"><img src="images/mail.svg.png" alt="mail"></a>
+      </nav>
     </footer>
+
     <script src="javascripts/main.js"></script>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
   </body>
 </html>
