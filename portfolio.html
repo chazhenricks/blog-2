@@ -3,19 +3,32 @@
   <head>
     <title> Chaz Henricks - Blog </title>
     <link rel ="stylesheet" href = "css/style.css" type ="text/css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   </head>
   <body>
 
-  <header class ="page-header">
-    <h1> Chaz Henricks </h1>
-    <nav class ="header-nav">
-      <ul>
-        <li><a href ="about.html">About</a></li>
-        <li><a href ="portfolio.html">Portfolio</a></li>
-        <li><a href ="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class ="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            Chaz Henricks
+          </div>
+
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+          </button>
+        </div>
+        <div class ="collapse navbar-collapse navHeaderCollapse">
+         <ul class ="nav navbar-nav navbar-right">
+           <li class =""><a href ="about.html">About</a></li>
+           <li class="active"><a href ="portfolio.html">Portfolio</a></li>
+           <li><a href ="blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
   <article class="placeholder-message">
       Hi. Once I get more projects under my belt this is where I will display them. In the meantime, feel free to visit my GitHub page linked down at the bottom.
@@ -36,5 +49,7 @@
   </footer>
 
   <script src="javascripts/main.js"></script>
+  <script src="bootstrap/js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
   </body>
 </html>
