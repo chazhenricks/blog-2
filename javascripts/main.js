@@ -14,6 +14,7 @@ var blogPosts = [
   "This week help me solidify some more knowledge of CSS styling with flexbox as well as learning more about how to work in groups. My very limited knowledge of Flexbox turned into teaching classmates how to used my limited knowledge of flexbox. Because I was helping others I was constantly having to look up the documentation to find answers to questions and problems which further solidified the different properties and values and how to use them. I went from being very vaguely familiar to having a pretty good grasp on how to do layouts using flexbox. This week also served as more good experience with working in groups. I'm still figuring out how to best handle GihHub, tickets and merge issues, but I know I am in a much better place at the end of this week than I was last week.",
   author: "Chaz Henricks",
 },
+{
   title: "NSS - Week 3",
   date: "April 24, 2017",
   copy:
