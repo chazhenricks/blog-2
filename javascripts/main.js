@@ -14,27 +14,48 @@ var blogPosts = [
   "This week help me solidify some more knowledge of CSS styling with flexbox as well as learning more about how to work in groups. My very limited knowledge of Flexbox turned into teaching classmates how to used my limited knowledge of flexbox. Because I was helping others I was constantly having to look up the documentation to find answers to questions and problems which further solidified the different properties and values and how to use them. I went from being very vaguely familiar to having a pretty good grasp on how to do layouts using flexbox. This week also served as more good experience with working in groups. I'm still figuring out how to best handle GihHub, tickets and merge issues, but I know I am in a much better place at the end of this week than I was last week.",
   author: "Chaz Henricks",
 },
-
+{
+  title: "NSS - Week 3",
+  date: "April 24, 2017",
+  copy:
+  "This week at NSS had started to stretch more of what I have learned than the last two weeks have. This was the first week where some of the exercises were pushing me to abstractly put together pieces of knowledge to solve a problem. Most noteably on an exercise labeled 'WYSIWYG'. Essentially the exercise had you create and array of objects thst contained facts about famous people. When you clicked on one of the name titles, your cursor is focused on an input box and what you type into the input will dynamically replace the bio section of the name you clicked, and only the name you clicked. Since the site was suppsoed to be dynamic I gave everything classes once they are written to the DOM from Javascript. The hardest part was figuring out how to assign the EvenetListeners on each name as it is created as well as link the text input to that specific bio. Originally I was using a path like 'event.tatger.parentChild.parentChild.siblingElement.childNode.childNode to connect everything. Both Brenda and Gref pointed ou that this is a very fragile way to write things. If there happens to be any more elements added to a post in the future the entire thing falls apart. Brenda had suggested using the 'closest()' selector. I was having trouble getting this method to grab what I wanted. Greg had suggested using the 'querySelector()' method. Again I was having trouble getting Javascript to select exactly what I wanted. Then something dawned on me - 'closest()' doesnt like selecting cousin elements, but it will select parents and grandparents quite easlily. And 'querySelector()' can select all the classes on the document <i> or </i> within a certain tree you tell it to look in. So on each event listener on click sets the target to be the grandparent of the item selected and then the first class that named 'famous-bio' inside of that grandparent. This lets you change up the format of the famous persons bio however you like while still working as expected as long as nothing else shares the specifc class of 'famous-bio' within that tree. This lets you add as many famous people cards and additional info as you so choose and maintain the same usability.",
+  author: "Chaz Henricks",
+},
+{
+  title: "NSS - Week 4",
+  date: "May 1, 2017",
+  copy: "This week concludes the end of my first month at Nashville Software School. I can honestly say if yu told me where I would be at the end of the first month when I applied to the program last May I would'nt believe you. I know full well there is a multitude of things that I do not know about programming and web development, but I feel, at least after this first month, that I am starting to get my bearings and starting to figure out how to solve problems. I'm starting to get a good grasp on IIFE statements and XHR requests, the ideas of APIs are beginnign to make sense to me and I'm starting to get good at breaking down problems and solving them in chunks. I'm getting more excited each week and I look forward to building more things.",
+  author: "Chaz Henricks",
+}
 ];
 
 var container = document.getElementById("container");
+var links = document.getElementById("list-group");
 
-for (potato in blogPosts){
+for (var i=0;i<blogPosts.length;i++){
   var posts =
-    `<article class ="blog-entry">
-      <header class="blog-header">
-        <h3 class="blog-date"> -- ${blogPosts[potato].date} --</h3>
-        <h2 class="blog-title">${blogPosts[potato].title} </h2>
+    `<article class ="container-fluid">
+      <header class="page-header">
+        <h3 class="">${blogPosts[i].date}</h3>
+        <h2 id ="post${i}">${blogPosts[i].title} </h2>
       </header>
-      <section class="blog-copy">
-        ${blogPosts[potato].copy}
+      <section class="">
+        ${blogPosts[i].copy}
       </section>
-      <footer class="blog-footer">
-        <p class="blog-author">Written By - ${blogPosts[potato].author}
+      <footer class="">
+        <p class="">Written By - ${blogPosts[i].author}
       </footer>
     </article>`;
 
+  var linkContent =
+  `<a href="#post${i}" class="list-group-item">
+    <h4 class ="list-group-item-heading">${blogPosts[i].title}</h4>
+    <p class ="list-group-item-text">${blogPosts[i].author}</p>
+   </a>
+  `
+
 container.innerHTML += posts;
+links.innerHTML += linkContent;
 
 };
 
