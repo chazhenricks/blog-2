@@ -113,10 +113,13 @@ min-height:100vh;
 flex-direction: column;
 }
 
-#container{
+#blog-posts{
 flex: 1;
 margin-bottom: 5%;
+max-height: calc(100% - 103px);
 }
+
+
 
 .blog-entry{
   display: flex;
